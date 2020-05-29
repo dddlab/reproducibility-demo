@@ -9,7 +9,9 @@ services:
       - ${HOST_DIR}:/home/jovyan
       - ${CERT_DIR}:/etc/ssl/notebook
     user: 'root'
-    env_file: env_file
+    environment:
+      JUPYTER_ENABLE_LAB: 'yes'
+      GRANT_SUDO: 'yes'
     ports:
       - 8889:8888
     command: "start-notebook.sh \
