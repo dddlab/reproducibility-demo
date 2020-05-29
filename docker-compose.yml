@@ -2,11 +2,11 @@ version: '3'
 services:
   notebook:
     build:
-      context: ./${IMAGE}
+      context: ./
       dockerfile: Dockerfile
-    image: ${IMAGE}:${TAG:-latest}
+    image: reproducibility-demo:${TAG:-latest}
     volumes:
-      - ${HOST_DIR}:/home/jovyan
+      - ${HOST_DIR}:/home/jovyan/work
       - ${CERT_DIR}:/etc/ssl/notebook
     user: 'root'
     environment:
