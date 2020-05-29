@@ -9,7 +9,7 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 
-COPY . ${HOME}
+COPY . ${HOME}/work
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 
