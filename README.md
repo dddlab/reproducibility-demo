@@ -35,5 +35,5 @@ git clone https://github.com/dddlab/reproducibility-demo.git
 cd reproducibility-demo/
 chmod u+x setup.sh
 ./setup.sh 
-IMAGE=first-env docker-compose up --build -d
+docker-compose up --build -d
 ```
