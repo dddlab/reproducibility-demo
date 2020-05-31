@@ -33,6 +33,7 @@ sudo apt-get update && \
 
 git clone https://github.com/dddlab/reproducibility-demo.git
 cd reproducibility-demo/
+git checkout prep-for-binder
 chmod u+x setup.sh
 ./setup.sh 
 docker-compose up --build -d
