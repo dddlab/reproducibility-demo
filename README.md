@@ -1,6 +1,6 @@
 # Reproducibility Demo
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dddlab/reproducibility-demo/prep-for-binder)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dddlab/reproducibility-demo/master)
 
 ## Binder
 
