@@ -14,8 +14,8 @@ openssl req -x509 -nodes \
 
 ## download utility for hashing jupyter notebook password
 wget -nc https://github.com/dddlab/jupyter-passwd/releases/download/v0.0.1.6/hash-password \
-    -O .dddlab/hash-password && \
-    chmod u+x .dddlab/hash-password
+    -O hash-password && \
+    chmod u+x hash-password
 
 ## https://github.com/docker/compose/issues/4223#issuecomment-280077263
 ## https://docs.docker.com/compose/environment-variables/
@@ -26,5 +26,5 @@ cat <<EOF > .env
 
 HOST_DIR=${PWD}
 CERT_DIR=${PWD}/keys
-PASSWD=$(.dddlab/hash-password)
+PASSWD=$(./hash-password)
 EOF
