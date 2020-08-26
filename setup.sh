@@ -13,7 +13,8 @@ openssl req -x509 -nodes \
     -subj "/C=US/ST=A/L=B/O=C/OU=D/CN=F"
 
 ## download utility for hashing jupyter notebook password
-wget -nc https://github.com/dddlab/jupyter-passwd/releases/download/v0.0.1.6/hash-password \
+[ -d .dddlab ] || mkdir .dddlab
+wget -nc https://github.com/dddlab/jupyter-passwd/releases/download/v0.1.1/hash-password \
     -O .dddlab/hash-password && \
     chmod u+x .dddlab/hash-password
 
@@ -26,5 +27,5 @@ cat <<EOF > .env
 
 HOST_DIR=${PWD}
 CERT_DIR=${PWD}/keys
-PASSWD=$(.dddlab/hash-password)
+PASSWD=$(.dddlab/hash-password | tail -n1)
 EOF
