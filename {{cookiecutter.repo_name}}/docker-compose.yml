@@ -4,7 +4,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: reproducibility-demo:${TAG:-latest}
+    image: {{cookiecutter.repo_name}}:${TAG:-latest}
     volumes:
       - ${HOST_DIR}:/home/jovyan/work
       - ${CERT_DIR}:/etc/ssl/notebook
@@ -13,7 +13,7 @@ services:
       JUPYTER_ENABLE_LAB: 'yes'
       GRANT_SUDO: 'yes'
     ports:
-      - 8889:8888
+      - {{cookiecutter.notebook_port}}:8888
     command: "start-notebook.sh \
               --NotebookApp.password=${PASSWD} \
               --NotebookApp.certfile=/etc/ssl/notebook/mycert.pem \
