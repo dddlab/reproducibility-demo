@@ -1,9 +1,9 @@
 {
-    "full_name": "Your Name",
-    "email": "youremail@gmail.com",
-    "project_name": "Reproducibility Demo",
-    "project_short_description": "[Minimal] repository for a reproducible Binder-compatible project structure.",
-    "repo_name": "reproducibility-demo",
-    "notebook_port": "8888",
-    "docker_image": "syoh/reproducibility-demo"
+  "project_name": "Your Project Name",
+  "project_description": "My project with Jupyter Notebook",
+  "github_username": "you",
+  "project_slug": "{{ cookiecutter.project_name | slugify }}",
+  "github_repo": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "base_jupyter_notebook_image": "jupyter/scipy-notebook:dc57157d6316",
+  "jupyter_notebook_port": "443"
 }

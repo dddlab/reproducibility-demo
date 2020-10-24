@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:dc57157d6316
+FROM {{ cookiecutter.github_repo }}:latest
 
 # start binder compatibility
 # from https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
@@ -13,9 +13,4 @@ COPY . ${HOME}/work
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 
-# end binder compatibility code
-
-# add modification code here
-
 USER ${NB_USER}
-RUN pip install cookiecutter
