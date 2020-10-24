@@ -9,8 +9,6 @@ sudo apt-get update && \
    sudo usermod -aG docker $USER && \
    newgrp docker
 
-# re-login to to apply docker group setting
-
 git clone https://github.com/{{ cookiecutter.github_repo }}.git
 cd {{ cookiecutter.github_repo }}/
 make setup
