@@ -6,7 +6,8 @@
 # install necessary packages on debian or ubuntu
 sudo apt-get update && \
    sudo apt-get install -y wget git docker.io docker-compose && \
-   sudo usermod -aG docker $USER
+   sudo usermod -aG docker $USER && \
+   newgrp docker
 
 # re-login to to apply docker group setting
 
