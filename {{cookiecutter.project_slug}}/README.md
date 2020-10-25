@@ -16,4 +16,4 @@ make start # start jupyter notebook server
 make stop  # stop jupyter notebook server
 ```
 
-_Created from [https://github.com/dddlab/reproducibility-demo](https://github.com/dddlab/reproducibility-demo)_
+_Created from [dddlab/reproducibility-demo](https://github.com/dddlab/reproducibility-demo) cookiecutter template_
