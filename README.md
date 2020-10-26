@@ -23,7 +23,7 @@ This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[in
         ~/miniconda3/bin/conda init bash && \
         source ~/.bashrc
     ```
-* Install `cookiecutter`
+* Install `cookiecutter`  
     `pip install cookiecutter`
 * Running `cookiecutter gh:dddlab/reproducibility-demo` creates directory `[your-project-name]` for "Your Project Name"
     * `project_slug`: name of your project directory: e.g. `your-project-name`
