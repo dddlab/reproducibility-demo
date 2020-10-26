@@ -25,7 +25,11 @@ Debian 10 (Buster)
     ```
 * Install `cookiecutter`
     `pip install cookiecutter`
-* Running `cookiecutter gh:dddlab/reproducibility-demo` creates a directory `[your-project-name]` for "Your Project Name"
+* Running `cookiecutter gh:dddlab/reproducibility-demo` creates directory `[your-project-name]` for "Your Project Name"
+    * `project_slug`: name of your project directory: e.g. `your-project-name`
+    * `github_repo`: the repository where your project will live
+    * `base_jupyter_notebook_image`: a compatible notebook image. To find a starter image, see [available image descriptions](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#core-stacks) and their _Docker Hub image tags_ links
+    * `jupyter_notebook_port`: port number for https ([default is 443](https://www.lifewire.com/what-is-port-443-4690657))
 
 ## Stage 3
 
