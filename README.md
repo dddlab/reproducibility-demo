@@ -17,15 +17,23 @@ This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[in
 ## Stage 2: Instantiate Project from Template
 
 * Python (Miniconda3)
-    ```
+    ```bash
     curl -fSL -o ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
         bash ~/miniconda.sh -b -u -p ~/miniconda3 && \
         ~/miniconda3/bin/conda init bash && \
         source ~/.bashrc
     ```
-* Install `cookiecutter`  
-    `pip install cookiecutter`
-* Running `cookiecutter gh:dddlab/reproducibility-demo` creates directory `[your-project-name]` for "Your Project Name"
+* Install dependencies  
+    ```bash
+    pip install cookiecutter
+    sudo apt-get update && \
+        sudo apt-get install git
+    ```
+*  Create `[your-project-name]` directory for "Your Project Name"  
+    ```bash
+    cookiecutter gh:dddlab/reproducibility-demo
+    ```
+    Cookiecutter will ask you some questions including, 
     * `project_slug`: name of your project directory: e.g. `your-project-name`
     * `github_repo`: the repository where your project will live
     * `base_jupyter_notebook_image`: a compatible notebook image. To find a starter image, see [available image descriptions](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#core-stacks) and their _Docker Hub image tags_ links
