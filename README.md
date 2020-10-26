@@ -12,7 +12,7 @@ There are three stages in deploying your own Jupyter notebook on the cloud.
 
 ## Stage 1: Create a Virtual Machine
 
-Debian 10 (Buster)
+This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[instructions](https://cloud.google.com/compute/docs/quickstart-linux)]. Either `Allow HTTPS traffic` (defaults to port 443) is selected or the port to be used in Stage 3 (see below) is open on the firewall [[instructions](https://cloud.google.com/vpc/docs/using-firewalls)].
 
 ## Stage 2: Instantiate Project from Template
 
