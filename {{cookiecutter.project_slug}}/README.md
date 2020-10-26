@@ -9,7 +9,6 @@
 ### Install Dependencies
 
 ```bash
-# install dependencies
 sudo apt-get update && \
    sudo apt-get install -y make git docker.io docker-compose && \
    sudo usermod -aG docker $USER && \
@@ -23,6 +22,8 @@ make setup # initial setup
 make start # start jupyter notebook server
 make stop  # stop jupyter notebook server
 ```
+
+When your notebook server is running, you can connect to it by going to `https://[virtual-machine-External-IP][:PORT]`. (The port can be omitted if 443, which is the default for HTTPS). You will see a warning that your connection is not private that you can safely [bypass](https://medium.com/idomongodb/chrome-bypassing-ssl-certificate-check-18b35d2a19fd).
 
 ### Commit to Github
 
