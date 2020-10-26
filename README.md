@@ -23,15 +23,10 @@ Debian 10 (Buster)
         ~/miniconda3/bin/conda init bash && \
         source ~/.bashrc
     ```
-* `cookiecutter`
+* Install `cookiecutter`
     `pip install cookiecutter`
-
-Run `cookiecutter gh:dddlab/reproducibility-demo` to create your project directory
+* Running `cookiecutter gh:dddlab/reproducibility-demo` creates a directory `[your-project-name]` for "Your Project Name"
 
 ## Stage 3
 
-Follow `[project-directory]/README.md` to launch your Jupyter notebook!
-
-* `git`
-* `make`
-* `docker` and `docker-compose`
+Follow `[your-project-name]/README.md` to launch your Jupyter notebook!
