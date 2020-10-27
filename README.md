@@ -27,7 +27,7 @@ This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[in
     ```bash
     pip install cookiecutter
     sudo apt-get update && \
-        sudo apt-get install git
+        sudo apt-get install -y git
     ```
 *  Create `[your-project-name]` directory for "Your Project Name"  
     ```bash
