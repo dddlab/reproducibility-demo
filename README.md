@@ -10,7 +10,7 @@ There are three stages in deploying your own Jupyter notebook on the cloud.
 2. Stage 2: Use `cookiecutter` to start your project directory
 3. Stage 3: From inside your project directory, configure and run your Jupyter notebook
 
-Screencast demo can be found below
+[A screencast demo can be found below](https://github.com/dddlab/reproducibility-demo/blob/main/README.md#screencast-video)
 
 ## Stage 1: Create a Virtual Machine
 
