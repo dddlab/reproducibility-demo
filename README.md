@@ -44,7 +44,3 @@ This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[in
 ## Stage 3
 
 Follow `[your-project-name]/README.md` to launch your Jupyter notebook!
-
-## Screencast Video
-
-[![Alt text](screenshot.png)](https://www.youtube.com/watch?v=9uT48PKhcZo)
