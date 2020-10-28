@@ -10,6 +10,8 @@ There are three stages in deploying your own Jupyter notebook on the cloud.
 2. Stage 2: Use `cookiecutter` to start your project directory
 3. Stage 3: From inside your project directory, configure and run your Jupyter notebook
 
+Screencast demo can be found below
+
 ## Stage 1: Create a Virtual Machine
 
 This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[instructions](https://cloud.google.com/compute/docs/quickstart-linux)]. Either `Allow HTTPS traffic` (defaults to port 443) is selected or the port to be used in Stage 3 (see below) is open on the firewall [[instructions](https://cloud.google.com/vpc/docs/using-firewalls)].
@@ -42,3 +44,7 @@ This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[in
 ## Stage 3
 
 Follow `[your-project-name]/README.md` to launch your Jupyter notebook!
+
+## Screencast Video
+
+[![Alt text](screenshot.png)](https://www.youtube.com/watch?v=9uT48PKhcZo)
