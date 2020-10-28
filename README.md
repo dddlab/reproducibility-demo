@@ -4,7 +4,7 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template for crea
 
 This template makes it easy to start your Jupyter notebook on a cloud VM. The following instructions have been tested on Google Cloud Platform with Debian 10.
 
-[Demo screencast video on YouTube](https://github.com/dddlab/reproducibility-demo/blob/main/README.md#screencast-video)
+[![Alt text](screenshot.png)](https://www.youtube.com/watch?v=9uT48PKhcZo)
 
 There are three stages in deploying your own Jupyter notebook on the cloud.
 
