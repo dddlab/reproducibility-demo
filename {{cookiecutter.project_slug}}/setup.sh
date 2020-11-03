@@ -9,7 +9,8 @@ openssl req -x509 -nodes \
     -newkey rsa:2048 \
     -keyout .dddlab/keys/mykey.key \
     -out .dddlab/keys/mycert.pem \
-    -subj "/C=US/ST=A/L=B/O=C/OU=D/CN=F"
+    -subj "/C=US/ST=A/L=B/O=C/OU=D/CN=F" && \
+    chmod a+r .dddlab/keys/mykey.key
 
 echo "### download password generating utility"
 curl -fSL https://github.com/dddlab/jupyter-passwd/releases/download/v0.1.1/hash-password \
