@@ -13,7 +13,7 @@ services:
       JUPYTER_ENABLE_LAB: 'yes'
       GRANT_SUDO: 'yes'
     ports:
-      - {{ cookiecutter.jupyter_notebook_port }}:8888
+      - ${PORT}:8888
     command: "start-notebook.sh \
               --NotebookApp.disable_check_xsrf=True \
               --NotebookApp.password=${PASSWD} \
