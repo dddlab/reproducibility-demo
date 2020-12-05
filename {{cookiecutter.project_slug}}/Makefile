@@ -18,8 +18,16 @@ build: ## Make the latest build of the image
 
 start: ARGS?=-d
 start: PORT?={{ cookiecutter.jupyter_notebook_port }}
-start: ## Start container with docker-compose.yml
+start: 
 	IMAGE=$(IMAGE) PORT=$(PORT) docker-compose up $(ARGS)
+
+colab: ARGS?=-d
+colab: OPT?="\
+	--NotebookApp.port_retries=0 \
+	--NotebookApp.token='' \
+	--NotebookApp.allow_origin='https://colab.research.google.com'"
+colab: 
+	PORT=8888 PASSWD="" OPT=$(OPT) docker-compose up $(ARGS)
 
 stop: ARGS?=
 stop: ## Stop container with docker-compose.yml
