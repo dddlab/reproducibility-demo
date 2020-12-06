@@ -19,11 +19,14 @@ sudo apt-get update && \
 
 ```
 make setup # initial setup
-make start # start jupyter notebook server
+make start # start jupyter notebook (password secured)
+make colab # start jupyter notebook (no security)
 make stop  # stop jupyter notebook server
 ```
 
-When your notebook server is running, you can connect to it by going to `https://[virtual-machine-External-IP][:PORT]`. (The port can be omitted if 443, which is the default for HTTPS). You will see a warning that your connection is not private that you can safely [bypass](https://medium.com/idomongodb/chrome-bypassing-ssl-certificate-check-18b35d2a19fd).
+If your notebook started with `make start`, you can connect to it by going to `https://[virtual-machine-External-IP][:PORT]`. (The port can be omitted if 443, which is the default for HTTPS). You will see a warning that your connection is not private that you can safely [bypass](https://medium.com/idomongodb/chrome-bypassing-ssl-certificate-check-18b35d2a19fd).
+
+If your notebook started with `make colab`, the server is running without any authentication or encryption. This mode is meant to be used as a way to start a remote kernel for your Colaboratory notebook to connect to. Refer to [Colaboratory documentation](https://research.google.com/colaboratory/local-runtimes.html)) for details on how to connect to a remote kernel with ssh port forwarding.
 
 ### Commit to Github
 
