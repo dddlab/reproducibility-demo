@@ -4,6 +4,6 @@
   "github_username": "you",
   "project_slug": "{{ cookiecutter.project_name | slugify }}",
   "github_repo": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
-  "base_jupyter_notebook_image": "jupyter/scipy-notebook:dc57157d6316",
+  "base_jupyter_notebook_image": "jupyter/datascience-notebook:notebook-6.1.5",
   "jupyter_notebook_port": "443"
 }

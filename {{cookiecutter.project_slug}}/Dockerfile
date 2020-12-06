@@ -16,3 +16,5 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
 RUN pip install cookiecutter
+RUN pip install --upgrade jupyter_http_over_ws>=0.0.7 && \
+    jupyter serverextension enable --py jupyter_http_over_ws
