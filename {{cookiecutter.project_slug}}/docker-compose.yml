@@ -13,7 +13,7 @@ services:
       JUPYTER_ENABLE_LAB: 'yes'
       GRANT_SUDO: 'yes'
     ports:
-      - ${PORT}:8888
+      - ${PORT:-0}:8888
     command: "start-notebook.sh \
               --NotebookApp.disable_check_xsrf=True \
               --NotebookApp.password=${PASSWD} \
