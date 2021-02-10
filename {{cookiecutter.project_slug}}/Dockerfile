@@ -15,6 +15,11 @@ RUN chown -R ${NB_UID} ${HOME}
 
 USER ${NB_USER}
 
-RUN pip install cookiecutter
-RUN pip install --upgrade jupyter_http_over_ws>=0.0.7 && \
-    jupyter serverextension enable --py jupyter_http_over_ws
+RUN pip install \
+        jupyter-server-proxy==1.2.0 \
+        jupyter-rsession-proxy==1.0b6 \
+        jupyterlab-git==0.23.3 \
+        cookiecutter==1.7.2 \
+        jupyter_http_over_ws>=0.0.7 && \
+    jupyter serverextension enable --py jupyter_http_over_ws && \
+    jupyter lab build
