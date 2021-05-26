@@ -43,4 +43,4 @@ This template hast been tested with Google Cloud VM with Debian 10 (Buster) [[in
 
 ## Stage 3
 
-Follow `[your-project-name]/README.md` to launch your Jupyter notebook!
+Find `README.md` in `[your-project-name]` directory for instructions on how to launch your Jupyter notebook!
