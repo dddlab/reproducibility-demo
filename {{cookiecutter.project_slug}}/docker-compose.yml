@@ -12,9 +12,13 @@ services:
     environment:
       JUPYTER_ENABLE_LAB: 'yes'
       GRANT_SUDO: 'yes'
+      NB_USER: '{{ cookiecutter.notebook_username }}'
+      CHOWN_HOME: 'yes'
+      GEN_CERT: 'yes'
+      RESTARTABLE: 'yes'
     ports:
       - ${PORT:-0}:8888
     command: "start-notebook.sh \
               --NotebookApp.disable_check_xsrf=True \
-              --NotebookApp.password=${PASSWD} \
-              ${OPT:---NotebookApp.certfile=/etc/ssl/notebook/mycert.pem --NotebookApp.keyfile=/etc/ssl/notebook/mykey.key}"
+              --NotebookApp.password=${PASSWD}"
+
